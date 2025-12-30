@@ -1,0 +1,1 @@
+Gallery pages live here
