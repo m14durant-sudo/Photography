@@ -1,0 +1,20 @@
+---
+layout: default
+title: "Slinger vs. Whitefish Bay — 09/26/25"
+---
+
+<div id="main">
+  <h2 style="text-align:center; margin-bottom: 2rem;">
+    Slinger vs. Whitefish Bay — 09/26/25
+  </h2>
+
+  {% for image in site.static_files %}
+    {% if image.path contains 'images/fulls/slinger-vs-whitefishbay' %}
+      <article class="thumb">
+        <a href="{{ site.baseurl }}{{ image.path }}" class="image">
+          <img src="{{ site.baseurl }}{{ image.path | replace: 'fulls', 'thumbs' }}" />
+        </a>
+      </article>
+    {% endif %}
+  {% endfor %}
+</div>

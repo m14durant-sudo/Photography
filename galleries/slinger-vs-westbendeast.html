@@ -1,0 +1,20 @@
+---
+layout: default
+title: "Slinger vs. West Bend East — 10/03/25"
+---
+
+<div id="main">
+  <h2 style="text-align:center; margin-bottom: 2rem;">
+    Slinger vs. West Bend East — 10/03/25
+  </h2>
+
+  {% for image in site.static_files %}
+    {% if image.path contains 'images/fulls/slinger-vs-westbendeast' %}
+      <article class="thumb">
+        <a href="{{ site.baseurl }}{{ image.path }}" class="image">
+          <img src="{{ site.baseurl }}{{ image.path | replace: 'fulls', 'thumbs' }}" />
+        </a>
+      </article>
+    {% endif %}
+  {% endfor %}
+</div>
