@@ -1,5 +1,22 @@
---- layout: default title: "Slinger vs. Hartford â€” 09/05/25" ---
-Slinger vs. Hartford â€” 09/05/25
-{% for image in site.static_files %} {% if image.path contains 'images/fulls/slinger-vs-hartford' %}
+---
+layout: default
+title: "Slinger vs. Hartford — 09/05/25"
+---
 
-{% endif %} {% endfor %}
+<div id="main">
+
+  <h2 style="text-align:center; margin-bottom: 2rem;">
+    Slinger vs. Hartford — 09/05/25
+  </h2>
+
+  {% for image in site.static_files %}
+    {% if image.path contains 'images/fulls/slinger-vs-hartford' %}
+      <article class="thumb">
+        <a href="{{ site.baseurl }}{{ image.path }}" class="image">
+          <img src="{{ site.baseurl }}{{ image.path | replace: 'fulls', 'thumbs' }}" />
+        </a>
+      </article>
+    {% endif %}
+  {% endfor %}
+
+</div>
