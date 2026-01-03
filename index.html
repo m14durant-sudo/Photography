@@ -1,56 +1,72 @@
---- layout: default ---
-{{ site.header.title }} {{ site.header.subtitle }}
-	•	About  
+---
+layout: default
+---
 
-Slinger Vs. Menomonee Falls â€” 08/22/25
+<div id="wrapper">
 
-Slinger Vs. Hartford â€” 09/05/25
+  <!-- Header -->
+  <header id="header">
+    <h1>
+      <a href="{{ site.baseurl }}/">
+        <strong>{{ site.header.title }}</strong> {{ site.header.subtitle }}
+      </a>
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="#footer">About</a></li>
+      </ul>
+    </nav>
+  </header>
 
-Slinger Vs. West Bend West â€” 09/12/25
+  <!-- Main -->
+  <div id="main">
+    <section class="gallery-grid">
 
-Powderpuff â€” 09/17/25
+      <article class="thumb">
+        <a href="{{ site.baseurl }}/galleries/slinger-vs-menomoneefalls.html" class="image">
+          <img src="{{ site.baseurl }}/images/thumbs/slinger-vs-menomoneefalls/IMG_1854.jpg" alt="">
+        </a>
+        <h2>Slinger Vs. Menomonee Falls — 08/22/25</h2>
+      </article>
 
-Slinger Vs. Nicolet â€” 09/19/25
+      <article class="thumb">
+        <a href="{{ site.baseurl }}/galleries/slinger-vs-hartford.html" class="image">
+          <img src="{{ site.baseurl }}/images/thumbs/slinger-vs-hartford/IMG_3686.jpg" alt="">
+        </a>
+        <h2>Slinger Vs. Hartford — 09/05/25</h2>
+      </article>
 
-Spanish Club Vs. German Club Soccer Game â€” 09/25/25
+      <article class="thumb">
+        <a href="{{ site.baseurl }}/galleries/slinger-vs-westbendwest.html" class="image">
+          <img src="{{ site.baseurl }}/images/thumbs/slinger-vs-westbendwest/IMG_4906.jpg" alt="">
+        </a>
+        <h2>Slinger Vs. West Bend West — 09/12/25</h2>
+      </article>
 
-Slinger Vs. Whitefish Bay â€” 09/26/25
+      <article class="thumb">
+        <a href="{{ site.baseurl }}/galleries/powderpuff.html" class="image">
+          <img src="{{ site.baseurl }}/images/thumbs/powderpuff/IMG_7002.jpg" alt="">
+        </a>
+        <h2>Powderpuff — 09/17/25</h2>
+      </article>
 
-Slinger Vs. West Bend East â€” 10/03/25
+      <article class="thumb">
+        <a href="{{ site.baseurl }}/galleries/slinger-vs-nicolet.html" class="image">
+          <img src="{{ site.baseurl }}/images/thumbs/slinger-vs-nicolet/IMG_9972.jpg" alt="">
+        </a>
+        <h2>Slinger Vs. Nicolet — 09/19/25</h2>
+      </article>
 
-Slinger Vs. Homestead â€” 10/10/25
+    </section>
+  </div>
 
-Slinger Vs. Cedarburg â€” 10/17/25
+  <!-- Footer -->
+  <footer id="footer" class="panel">
+    <div class="inner">
+      <h2>{{ site.footer.name }}</h2>
+      <p>{{ site.footer.bio }}</p>
+      <p>{{ site.footer.github }}</p>
+    </div>
+  </footer>
 
-Slinger Vs. West Bend West â€” 10/24/25
-
-Slinger Vs. Notre Dame Academy â€” 10/31/25
-
-Slinger Vs. Cedarburg â€” 12/05/25
-{{ site.footer.name }}
-{{ site.footer.bio }}
-{{ site.footer.github }}
-Sponsor
-
-Turn your screen into a canvas when on video calls and articulate your thoughts better than ever with the Presentify app.
-Follow me on ...
-	•	{% if site.social_urls.facebook %}
-	•	Facebook
-	•	{% endif %} {% if site.social_urls.twitter %}
-	•	Twitter
-	•	{% endif %} {% if site.social_urls.instagram %}
-	•	Instagram
-	•	{% endif %} {% if site.social_urls.dribbble %}
-	•	Dribbble
-	•	{% endif %} {% if site.social_urls.github %}
-	•	GitHub
-	•	{% endif %} {% if site.social_urls.linkedin %}
-	•	LinkedIn
-	•	{% endif %}
-© {{ site.author }}. Design: {{ site.web_design }}
-Get in touch
-
-
-
-	•	
-	•	
+</div>
