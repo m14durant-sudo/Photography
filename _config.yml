@@ -1,4 +1,5 @@
 # Base configs
+url: "https://m14durant-sudo.github.io"
 baseurl: "/Photography"
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
